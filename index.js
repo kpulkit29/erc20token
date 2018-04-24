@@ -24,7 +24,6 @@ app.use(passport.initialize());
 app.use(passport.session()); 
 app.use(express.static(__dirname+"/client/public"));
 app.all('/*', function(req, res, next) {
-  res.header("Access-Control-Allow-Origin", "*");
   next();
 });
 app.get("/",function(req,res){
@@ -32,6 +31,7 @@ app.get("/",function(req,res){
 });
 app.get("/log",(req,res)=>{
   console.log("yes");
+  res.header("Access-Control-Allow-Origin", "*");
   res.send("0");
 });
 app.get("/auth/google",passport.authenticate("google",{scope:['profile','email']}));
