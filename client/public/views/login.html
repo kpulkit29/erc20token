@@ -1,0 +1,38 @@
+
+<md-card id="loginForm">
+        <md-tabs md-dynamic-height md-border-bottom style="color:white;">
+                <md-tab label="Admin" style="color:white;">
+                 <form style="margin-bottom:20px;">
+                        <md-input-container class="md-block" flex-gt-xs>
+                                <label>Username</label>
+                                <input type="text">
+                        </md-input-container>
+                        <md-input-container class="md-block" flex-gt-xs>
+                                <label>Password</label>
+                                <input type="password">
+                        </md-input-container>
+                       <button style="padding:6px;color:white;display:block;margin:auto;width:60%;background-color:#26A69A;" ng-click="dashboardAdmin()">Submit</button>
+                 </form>
+                 
+                </md-tab>
+                <md-tab label="User" style="color:white;">
+                        <!-- <form style="margin-bottom:20px;">
+                                <md-input-container class="md-block" flex-gt-xs>
+                                        <label>Username</label>
+                                        <input type="text" name="email">
+                                </md-input-container>
+                                <md-input-container class="md-block" flex-gt-xs>
+                                        <label>Password</label>
+                                        <input type="password" name="password">
+                                </md-input-container>
+                             
+                               <p style="text-align: center;color:black;">OR</p>
+                               <button style="padding:4px;text-align:center;color:white;display:block;margin:auto;width:60%;background-color:#26A69A;" ng-click="newuser()">Sign Up</button>
+                               <p style="text-align: center;color:black;">OR</p>
+                               <button style="padding:4px;text-align:center;color:white;display:block;margin:auto;width:60%;background-color:#26A69A;" ng-click="openadminPage()">Login as Admin</button>
+                         </form> -->
+                         <button style="padding:6px;text-align:center;color:white;display:block;margin:auto;width:60%;background-color:#26A69A;" ng-click="googleLog()">Login</button>
+                </md-tab>
+        </md-tabs>
+
+    </md-card>

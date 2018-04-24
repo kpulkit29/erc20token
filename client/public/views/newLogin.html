@@ -1,0 +1,28 @@
+<md-card class="flex-container">
+    <md-card-content>
+            <form>
+            <md-input-container md-no-float class="md-block">
+                    <input ng-model="user.address2" placeholder="First Name">
+                  </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                        <input ng-model="user.address2" placeholder="Last Name">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                    <input ng-model="user.address2" placeholder="Email">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                    <input ng-model="pw1" name="pw1" id="pw1" type="password" placeholder="Password">
+            </md-input-container>
+            <md-input-container md-no-float class="md-block">
+                    <input ng-model="pw2" name="pw2" id="pw2" type="password" placeholder="Repeat Password" pw-check='pw1'>
+            </md-input-container>
+            <div class='msg-block' ng-show='myForm.$error'>
+                <span class='msg-error' ng-show='myForm.pw2.$error.pwmatch'>
+                  Passwords don't match.
+                </span>
+              </div>
+              <button style="padding:3px;height:40px;width:80px;background:white;border:1px solid rgba(115,238,214, 0.6);display:block;margin:auto;">Submit</button>
+              </form>
+            </md-card-content>
+           
+</md-card>

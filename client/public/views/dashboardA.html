@@ -1,0 +1,66 @@
+<div style="height:auto;padding:5px;background-color:rgba(115,238,214, 0.6);top:0px;left:0px;position:absolute;width:100%;box-sizing:content-box;">
+    <div style="display:inline-block;width:10%;">
+    <img src="/assets/menu.svg" style="width:40px;height:25px;margin-bottom:10px;" ng-click="toggleLeft()">
+    </div>
+    <div style="display:inline-block;width:80%;">
+            <h3 style="text-align:center;color:white;">Admin Dashboard</h3>
+    </div>
+</div>
+<md-sidenav class="md-sidenav-left" md-component-id="left" md-disable-backdrop md-whiteframe="4">
+
+<md-toolbar style="background-color: rgba(115,238,214, 0.6);">
+<h1 class="md-toolbar-tools">Dashboard</h1>
+</md-toolbar>
+
+<md-content layout-margin>
+ <md-list flex>
+        <md-subheader class="md-no-sticky">Choose here</md-subheader>
+        <md-list-item class="md-3-line" ng-repeat="i in sideList" ng-click="null">
+          <div class="md-list-item-text" layout="column">
+           <strong>{{i}}</strong>
+          </div>
+</md-list-item></md-list>
+<md-button ng-click="toggleLeft()" class="md-accent">
+Go back
+</md-button>
+</md-content>
+
+</md-sidenav>
+
+<md-card id="loginForm2">
+                <md-tabs md-dynamic-height md-border-bottom style="color:white;">
+                        <md-tab label="Presale detail">
+                         <div class="row">
+                           <div class="col-md-6" style="color:white;padding:5px;height:100px;">
+                                 <h3 class="text-center" style="margin-top:30px;">Ending Date</h3>
+                                 <h5 class="text-center">{{Date}}</h5>
+                           </div>
+                           <div class="col-md-6" style="color:white;padding:5px;height:100px;">
+                                        <h3 class="text-center" style="margin-top:30px;">Tokens Minted</h3>
+                                        <h5 class="text-center">200000 WGT tokens</h5>
+                          </div>
+                         </div>
+                         <div class="row">
+                                        <div class="col-md-6" style="color:white;padding:5px;height:100px;">
+                                              <h3 class="text-center" style="margin-top:30px;">Admin Balance(in Wei)</h3>
+                                              <h5 class="text-center">{{balOfAdmin}}</h5>
+                                        </div>
+                                        <div class="col-md-6" style="color:white;padding:5px;height:100px;">
+                                                     <h3 class="text-center" style="margin-top:30px;">Presale is the current stage</h3>
+                                                     
+                                       </div>
+                                      </div>
+                        </md-tab>
+                        <md-tab label="Add token address">
+                                        <form style="margin-top:30px;padding:5px;">
+                                                        <md-input-container class="md-block" flex-gt-xs>
+                                                                <label>Please Enter the token address to proceed</label>
+                                                                <input type="text" ng-model="tokenAdd">
+                                                        </md-input-container>
+                                                       <button style="padding:6px;color:white;display:block;margin:auto;width:60%;background-color:#26A69A;" ng-disabled="!tokenAdd.length>0">Submit</button>
+                                         </form>
+                        </md-tab>
+                 </md-tabs>               
+    </md-card>
+
+</md-card>
