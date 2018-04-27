@@ -9,6 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "angularjs-social-login": "^2.6.1",
     "body-parser": "^1.18.2",
     "cookie-parser": "^1.4.3",
     "cookie-session": "^2.0.0-beta.3",
@@ -19,6 +20,8 @@
     "passport": "^0.4.0",
     "passport-google-oauth20": "^1.0.0",
     "passport-local": "^1.0.0",
+    "solc": "^0.4.23",
+    "speakeasy": "^2.0.0",
     "web3": "github:ethereum/web3.js"
   }
 }

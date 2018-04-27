@@ -1,0 +1,19 @@
+<div style="height:auto;padding:5px;background-color:rgba(115,238,214, 0.6);top:0px;left:0px;position:absolute;width:100%;box-sizing:content-box;">
+        <div class="row">
+            <div class="col-md-8">
+                <h3 class="text-center" style="color:white;margin-top:20px;">User Dasboard</h3>
+            </div>
+            <div class="col-md-4">
+                    <md-button class="md-raised md-warn" style="float:right;margin:20px;" ng-click="logoutUser()">Logout</md-button>
+                </div>
+        </div>
+    </div>
+<md-card id="loginForm2">
+  <p class="text-center">Current stage:{{icostate}}</p>
+  <md-input-container md-no-float class="md-block">
+      <label>Enter the amount in ether would want to contribute</label>
+    <input ng-model="money" type="number" placeholder="" required>
+  </md-input-container>
+  <md-button class="md-raised md-primary" style="margin:auto;display:block;margin-top:10px;" ng-click="contribute()">Submit</md-button>
+  <md-button class="md-raised md-primary" style="margin:auto;display:block;margin-top:10px;">See Tokens you own</md-button>
+</md-card>

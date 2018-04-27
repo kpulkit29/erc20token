@@ -1,6 +1,6 @@
  #loginForm {
     position: absolute;
-	top: 40%;
+	top: 50%;
 	right: 50%;
 	transform: translate(50%,-50%);
 	max-width: 90%;
@@ -10,6 +10,9 @@
     width:600px;
     height:auto; 
 } 
+span{
+    color:red;
+}
 #loginForm2 {
     position: absolute;
 	top: 45%;
